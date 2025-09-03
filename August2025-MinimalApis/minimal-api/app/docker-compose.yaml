@@ -1,0 +1,26 @@
+version: "3"
+services:
+  templateservice:
+    build:
+      context: .
+      args:
+        - FEED_ACCESSTOKEN={PAT_TOKEN}
+    container_name: templateservice
+    hostname: templateservice
+    ports:
+      - 5000:5000
+    environment:
+      - ASPNETCORE_ENVIRONMENT=dev
+      - Jwt__Authority=https://auth.dev.iwnonprod.com/
+      - Jwt__AudienceMachineToMachine=insurwave.com
+      - Jwt__AudienceFrontEnd=https://api.iwnonprod.com
+      - TokenGeneration__Audience=insurwave.com
+      - BaseApiUri=http://localhost:5000
+    deploy:
+      resources:
+        limits:
+          cpus: "0.3"
+          memory: 512m
+        reservations:
+          cpus: "0.1"
+          memory: 256m

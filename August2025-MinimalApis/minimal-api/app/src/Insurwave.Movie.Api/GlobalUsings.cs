@@ -1,0 +1,13 @@
+﻿global using System;
+global using System.Threading;
+global using System.Threading.Tasks;
+global using FluentValidation;
+global using Insurwave.Extensions.Authentication;
+global using Insurwave.Movie.Api.Clients.Contracts;
+global using Insurwave.Movie.Api.Exceptions;
+global using Insurwave.Movie.Domain.Mappings;
+global using Insurwave.Movie.Domain.Services;
+global using Microsoft.AspNetCore.Builder;
+global using Microsoft.AspNetCore.Http;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.AspNetCore.Routing;

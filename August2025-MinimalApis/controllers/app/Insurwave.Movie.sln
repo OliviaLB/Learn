@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32505.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0AF6FBD0-CF7D-4F95-8A1E-605DB20AC448}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C47968B1-F99D-46D0-A457-CCADF7DFBE08}"
+	ProjectSection(SolutionItems) = preProject
+		..\.editorconfig = ..\.editorconfig
+		.filenesting.json = .filenesting.json
+		azure-pipelines.yml = azure-pipelines.yml
+		Dockerfile = Dockerfile
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{9DD0CA1C-4D76-47B2-8A07-0F22FC234897}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insurwave.Movie.Api", "src\Insurwave.Movie.Api\Insurwave.Movie.Api.csproj", "{FB8E52F1-2019-4DC2-916E-7DE02E5E0F9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insurwave.Movie.Api.Clients", "src\Insurwave.Movie.Api.Clients\Insurwave.Movie.Api.Clients.csproj", "{8B96B4DD-E8F1-485A-83A8-24FD340116C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insurwave.Movie.Domain", "src\Insurwave.Movie.Domain\Insurwave.Movie.Domain.csproj", "{37BE4F3C-56D0-4885-8E63-4A9E87CD6AC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insurwave.Movie.ServiceTests", "tests\Insurwave.Movie.ServiceTests\Insurwave.Movie.ServiceTests.csproj", "{172F05D7-AC93-4E74-8C4D-AC14115A0E5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insurwave.Movie.UnitTests", "tests\Insurwave.Movie.UnitTests\Insurwave.Movie.UnitTests.csproj", "{3B678B7B-0E62-40A9-8365-9220EB9254BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insurwave.Movie.Persistence.Interfaces", "src\Insurwave.Movie.Persistence.Interfaces\Insurwave.Movie.Persistence.Interfaces.csproj", "{F18B97DD-8247-46DA-A6F0-F29AF5B9555E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insurwave.Movie.Persistence.Postgres", "src\Insurwave.Movie.Persistence.Postgres\Insurwave.Movie.Persistence.Postgres.csproj", "{7AFDEF8E-B5D6-4EA4-8992-79459918006D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insurwave.Movie.SQL.Migrations", "src\Insurwave.Movie.SQL.Migrations\Insurwave.Movie.SQL.Migrations.csproj", "{92720F55-0A0A-4BBD-B6FF-6F45176B1B67}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB8E52F1-2019-4DC2-916E-7DE02E5E0F9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB8E52F1-2019-4DC2-916E-7DE02E5E0F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB8E52F1-2019-4DC2-916E-7DE02E5E0F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB8E52F1-2019-4DC2-916E-7DE02E5E0F9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B96B4DD-E8F1-485A-83A8-24FD340116C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B96B4DD-E8F1-485A-83A8-24FD340116C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B96B4DD-E8F1-485A-83A8-24FD340116C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B96B4DD-E8F1-485A-83A8-24FD340116C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37BE4F3C-56D0-4885-8E63-4A9E87CD6AC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37BE4F3C-56D0-4885-8E63-4A9E87CD6AC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37BE4F3C-56D0-4885-8E63-4A9E87CD6AC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37BE4F3C-56D0-4885-8E63-4A9E87CD6AC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{172F05D7-AC93-4E74-8C4D-AC14115A0E5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{172F05D7-AC93-4E74-8C4D-AC14115A0E5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{172F05D7-AC93-4E74-8C4D-AC14115A0E5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{172F05D7-AC93-4E74-8C4D-AC14115A0E5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B678B7B-0E62-40A9-8365-9220EB9254BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B678B7B-0E62-40A9-8365-9220EB9254BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B678B7B-0E62-40A9-8365-9220EB9254BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B678B7B-0E62-40A9-8365-9220EB9254BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F18B97DD-8247-46DA-A6F0-F29AF5B9555E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F18B97DD-8247-46DA-A6F0-F29AF5B9555E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F18B97DD-8247-46DA-A6F0-F29AF5B9555E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F18B97DD-8247-46DA-A6F0-F29AF5B9555E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AFDEF8E-B5D6-4EA4-8992-79459918006D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AFDEF8E-B5D6-4EA4-8992-79459918006D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AFDEF8E-B5D6-4EA4-8992-79459918006D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AFDEF8E-B5D6-4EA4-8992-79459918006D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92720F55-0A0A-4BBD-B6FF-6F45176B1B67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92720F55-0A0A-4BBD-B6FF-6F45176B1B67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92720F55-0A0A-4BBD-B6FF-6F45176B1B67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92720F55-0A0A-4BBD-B6FF-6F45176B1B67}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FB8E52F1-2019-4DC2-916E-7DE02E5E0F9C} = {0AF6FBD0-CF7D-4F95-8A1E-605DB20AC448}
+		{8B96B4DD-E8F1-485A-83A8-24FD340116C6} = {0AF6FBD0-CF7D-4F95-8A1E-605DB20AC448}
+		{37BE4F3C-56D0-4885-8E63-4A9E87CD6AC7} = {0AF6FBD0-CF7D-4F95-8A1E-605DB20AC448}
+		{172F05D7-AC93-4E74-8C4D-AC14115A0E5B} = {9DD0CA1C-4D76-47B2-8A07-0F22FC234897}
+		{3B678B7B-0E62-40A9-8365-9220EB9254BB} = {9DD0CA1C-4D76-47B2-8A07-0F22FC234897}
+		{F18B97DD-8247-46DA-A6F0-F29AF5B9555E} = {0AF6FBD0-CF7D-4F95-8A1E-605DB20AC448}
+		{7AFDEF8E-B5D6-4EA4-8992-79459918006D} = {0AF6FBD0-CF7D-4F95-8A1E-605DB20AC448}
+		{92720F55-0A0A-4BBD-B6FF-6F45176B1B67} = {0AF6FBD0-CF7D-4F95-8A1E-605DB20AC448}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14894790-74FA-419C-A825-017216D3F000}
+	EndGlobalSection
+EndGlobal

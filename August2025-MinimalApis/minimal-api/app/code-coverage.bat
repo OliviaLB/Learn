@@ -1,0 +1,2 @@
+dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=TestResults/Coverage/coverage.cobertura.xml
+reportgenerator -reports:**/TestResults/Coverage/coverage.cobertura.xml -targetdir:"TestResults/Coverage" -reporttypes:HtmlInline_AzurePipelines

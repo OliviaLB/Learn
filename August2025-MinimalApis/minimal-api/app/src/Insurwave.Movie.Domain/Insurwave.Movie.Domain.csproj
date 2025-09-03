@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!--TODO: Example IW specific dependency. Remove from real service.-->
+    <PackageReference Include="Insurwave.Template" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Insurwave.Movie.Api.Clients\Insurwave.Movie.Api.Clients.csproj" />
+    <ProjectReference Include="..\Insurwave.Movie.Persistence.Interfaces\Insurwave.Movie.Persistence.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

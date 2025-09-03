@@ -1,0 +1,49 @@
+parameters:
+  - name: validateSwagger
+    displayName: Swagger Compatibility Check
+    type: boolean
+    default: true
+    values:
+      - true
+      - false
+  - name: deployFeature
+    displayName: Deploy feature branch?
+    type: boolean
+    default: false
+resources:
+  repositories:
+    - repository: iw-base-pipeline-templates
+      type: git
+      name: platform/iw-base-pipeline-templates
+      ref: refs/heads/master
+
+# Build on master branch but exclude changes to MD files
+trigger:
+  branches:
+    include:
+      - "master"
+  paths:
+    exclude:
+      - "**/*.md"
+
+variables:
+  - template: azure-pipelines/variables/common.yml@iw-base-pipeline-templates
+
+pool:
+  vmImage: $(vmimage)
+
+stages:
+  - template: azure-pipelines/base-dotnetcore.yml@iw-base-pipeline-templates
+    parameters:
+      deployFeature: ${{ parameters.deployFeature }}
+      applicationName: movieservice-app
+      imageAppName: movieservice
+      codeCoverageThreshold: 60
+      validateSwagger: ${{ parameters.validateSwagger }}
+      swaggerSource: "Insurwave.Movie.Api"
+      swaggerContinueOnError: true
+      #Do not remove below flag before updating:
+      #Service inventory page https://insurwave.atlassian.net/wiki/spaces/ALPHA/pages/498171940/Service+inventory
+      #Production readiness page https://insurwave.atlassian.net/wiki/spaces/PE/pages/784498959/Production+readiness+-+Checklist
+      firstTimeProdReady: false
+      buildPackages: true

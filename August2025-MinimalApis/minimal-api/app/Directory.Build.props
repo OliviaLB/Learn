@@ -1,0 +1,7 @@
+<Project>
+  <PropertyGroup>
+    <WarningsAsErrors>CS1998</WarningsAsErrors>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+</Project>
